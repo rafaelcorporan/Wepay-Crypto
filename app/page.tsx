@@ -5,7 +5,6 @@ import { Menu, X } from "lucide-react"
 import { Sidebar } from "@/components/sidebar"
 import { WalletDashboard } from "@/components/wallet-dashboard"
 import { SendPay } from "@/components/send-pay"
-import { ReceivePay } from "@/components/receive-pay"
 import { ExportData } from "@/components/export-data"
 import { Messages } from "@/components/messages"
 import { Contacts } from "@/components/contacts"
@@ -19,7 +18,6 @@ export default function Home() {
   const { isAuthenticated, isLoading, login, logout } = useAuth()
   const [activeView, setActiveView] = useState("dashboard")
   const [payTab, setPayTab] = useState<'send'|'receive'>("send")
-  const [getPayTab, setGetPayTab] = useState<'request'>("request")
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
   // Handle window resize to close mobile sidebar on desktop

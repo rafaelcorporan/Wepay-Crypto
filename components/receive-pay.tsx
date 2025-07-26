@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect, useRef, useCallback } from "react"
-import { ArrowLeft, Copy, Download, Users, Send, MessageCircle } from "lucide-react"
+import { ArrowLeft, Copy, Download, Users, Send } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
